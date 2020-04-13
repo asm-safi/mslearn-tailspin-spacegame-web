@@ -89,7 +89,7 @@ steps:
   displayName: 'Publish SonarCloud quality gate results'
 
 - task: PublishCodeCoverageResults@1
-  displayName: 'Publish code coverage report'
+  displayName: 'Publish code coverage reports'
   inputs:
     codeCoverageTool: 'cobertura'
     summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
